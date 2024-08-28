@@ -1,49 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GREEN-API Test</title>
+    <title>API Test Page</title>
     <style>
-        body {
-            display: flex;
-            margin: 0;
-            height: 100vh;
-        }
         .container {
             display: flex;
-            width: 100%;
-            height: 100%;
         }
         .left-column {
             flex: 1;
             padding: 20px;
-            border-right: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
         .right-column {
-            flex: 2;
+            flex: 1;
             padding: 20px;
         }
         .input-group {
             margin-bottom: 10px;
         }
-        .input-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .input-group input, .input-group button {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 5px;
-        }
         .response-field {
             width: 100%;
-            height: 100%;
-            white-space: pre-wrap;
-            border: 1px solid #ccc;
+            height: 200px; /* Adjust the height as needed */
+            overflow: auto; /* Enable scrolling if content overflows */
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
             padding: 10px;
-            box-sizing: border-box;
-            overflow-y: auto;
+            box-sizing: border-box; /* Ensure padding is included in width/height */
+        }
+        .left-column button {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -72,7 +61,7 @@
             <button onclick="sendMessage()">sendMessage</button>
             
             <div class="input-group">
-                <label for="phoneNumberFile">Номер телефона: (для файла):</label>
+                <label for="phoneNumberFile">Номер телефона (для файла):</label>
                 <input type="text" id="phoneNumberFile" placeholder="Введите номер телефона">
             </div>
             <div class="input-group">
