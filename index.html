@@ -3,57 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GREEN-API</title>
+    <title>API Testing</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         .container {
             display: flex;
-            width: 100%;
-            height: 100vh;
+            margin: 20px;
+        }
+
+        .left-column, .right-column {
+            padding: 10px;
         }
 
         .left-column {
-            width: 300px;
-            padding: 10px;
-            box-sizing: border-box;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .right-column {
             flex: 1;
-            padding: 10px;
-            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .input-group {
-            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
         }
 
-        input[type="text"] {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
+        .input-group label {
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            padding: 5px;
+            font-size: 16px;
         }
 
         button {
-            width: 100%;
             padding: 10px;
-            margin-bottom: 15px;
-            cursor: pointer;
+            font-size: 16px;
         }
 
         .response-field {
-            width: 100%;
-            height: calc(100vh - 200px); /* Adjust the height to be appropriate */
-            overflow-y: auto;
-            white-space: pre-wrap;
-            background-color: #f4f4f4;
+            border: 1px solid #ccc;
             padding: 10px;
-            border: 1px solid #ddd;
+            height: calc(100% - 90px); /* Adjust the height to be just under the last button */
+            overflow-y: auto; /* Allows scrolling if the content overflows */
+            background-color: #f9f9f9;
+            width: 90%;
         }
     </style>
 </head>
