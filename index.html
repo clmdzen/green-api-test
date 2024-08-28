@@ -4,7 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GREEN-API</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .left-column {
+            width: 300px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .right-column {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .response-field {
+            width: 100%;
+            height: calc(100vh - 200px); /* Adjust the height to be appropriate */
+            overflow-y: auto;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
